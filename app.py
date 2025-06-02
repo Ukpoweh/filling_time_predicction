@@ -6,7 +6,7 @@ import joblib
 model = joblib.load("random_forest_model.pkl")
 encoders = joblib.load("encoders.pkl")
 
-st.set_page_config(page_title="Simulation Time Prediction", page_icon="clock4:")
+st.set_page_config(page_title="Simulation Time Prediction", page_icon=":clock4:")
 
 def main():
     st.title("Predict Filling Time using Random Forest")
