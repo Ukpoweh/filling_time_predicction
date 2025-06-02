@@ -13,9 +13,9 @@ def main():
     shape = st.selectbox("Solder Ball Shape", encoders['Solder Ball shapes'].classes_)
     method = st.selectbox("Dispensing Method", encoders['Dispensing methods'].classes_)
     material = st.selectbox("Underfill Material", encoders['Underfill Material'].classes_)
-    viscosity = st.slider("Viscosity (Pa.s)", 0.001, 1.0, 0.5)
-    surface_tension = st.slider("Surface Tension (N/m)", 0.01, 0.1, 0.05)
-    density = st.slider("Density (kg/m³)", 500, 2000, 1000)
+    viscosity = st.number_input("Viscosity (Pa.s)")
+    surface_tension = st.number_input("Surface Tension (N/m)")
+    density = st.number_input("Density (kg/m³)")
 
     # Encode categorical inputs
     shape_encoded = encoders['Solder Ball shapes'].transform([shape])[0]
