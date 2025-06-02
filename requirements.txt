@@ -1,4 +1,6 @@
-﻿numpy==1.26.4
+setuptools>=58.0.0
+wheel
+numpy==1.26.4
 pandas==1.5.3
 streamlit==1.29.0
 scikit-learn==1.2.1
