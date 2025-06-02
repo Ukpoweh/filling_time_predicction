@@ -6,10 +6,10 @@ import joblib
 model = joblib.load("random_forest_model.pkl")
 encoders = joblib.load("encoders.pkl")
 
-st.set_page_config(page_title="Simulation Time Prediction", page_icon=":clock4:")
+st.set_page_config(page_title="Filling Time Prediction", page_icon=":clock4:")
 
 def main():
-    st.title("Predict Filling Time using Random Forest")
+    st.title("Predict Filling Time")
 
 # User inputs
     shape = st.selectbox("Solder Ball Shape", encoders['Solder Ball shapes'].classes_)
